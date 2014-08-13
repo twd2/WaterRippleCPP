@@ -31,12 +31,12 @@ bool FrameBufferHelper::open(const char * dev)
     }
     if (ioctl(fbfd, FBIOGET_FSCREENINFO, &finfo))  
     {  
-        cerr<<"Error：reading fixed information."<<endl;  
+        cerr<<"Error: reading fixed information."<<endl;  
         return false;
     }  
     if (ioctl(fbfd, FBIOGET_VSCREENINFO, &vinfo))  
     {  
-        cerr<<"Error：reading variable information."<<endl;  
+        cerr<<"Error: reading variable information."<<endl;  
         return false;
     }  
     
